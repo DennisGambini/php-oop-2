@@ -1,4 +1,5 @@
 <?php
+include_once __DIR__.'/../traits/Image.php';
 
 class Product {
     protected $price;
@@ -22,6 +23,8 @@ class Product {
     public function getDescription(){
         return $this->description;
     }
+
+    use Image;
 }
 
 ?>
