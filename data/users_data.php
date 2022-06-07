@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__.'/../classes/Foreign.php';
+require_once __DIR__.'/../classes/Subscriber.php';
 
 $user_1 = new Subscriber('Mirco', 'Cavalletti', 'mirco.cavalletti@gmail.com');
 $user_2 = new Foreign('Giovanna', 'Lori', 'giovanna.lori@gmail.com');

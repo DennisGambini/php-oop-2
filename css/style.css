@@ -13,3 +13,7 @@ header{
 header > h1{
     text-align: center;
 }
+
+#prodotti{
+    margin-top: 100px;
+}

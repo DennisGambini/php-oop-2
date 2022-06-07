@@ -1,10 +1,12 @@
 <?php
-require_once __DIR__.'/classes/Foreign.php';
-require_once __DIR__.'/classes/Subscriber.php';
 require_once __DIR__.'/data/users_data.php';
+require_once __DIR__.'/data/products_data.php';
 
-$users = [$user_1,$user_2, $user_3, $user_4, $user_5];
+$users = [$user_1, $user_2, $user_3, $user_4, $user_5];
 var_dump($users);
+
+$products = [$prod_1, $prod_2, $prod_3];
+var_dump($products);
 
 ?>
 
@@ -19,12 +21,13 @@ var_dump($users);
 </head>
 <body>
     <header>
-        <h1>E-Commerce</h1>
+        <h1>Il Paradiso Del Bestiame</h1>
     </header>
 
     <main>
+        <section id="users">
         <?php foreach($users as $user){ ?>
-        <section class="user">
+        <div class="user">
             <h2>
                 <?php echo "{$user->getName()} {$user->getSurname()}"; ?>
             </h2>
@@ -40,8 +43,13 @@ var_dump($users);
             <p>
                 <?php echo "Sconto : {$user->getDiscount()}".' %' ?>
             </p>
-        </section>
+        </div>
         <?php } ?>
+        </section>
+
+        <section id="products">
+            prodotti
+        </section>
     </main>
 </body>
 </html>
