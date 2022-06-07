@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__.'/../traits/Treatment.php';
+require_once __DIR__.'/../traits/Payment.php';
 
 class User {
     protected $name;
