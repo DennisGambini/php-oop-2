@@ -1,5 +1,12 @@
 <?php
+require_once __DIR__.'/classes/Foreign.php';
+require_once __DIR__.'/classes/Subscriber.php';
 
+$user_1 = new User('Mario', 'Rossi', 'mario.rossi@gmail.com');
+$user_2 = new Subscriber('Mirco', 'Cavalletti', 'mirco.cavalletti@gmail.com');
+$user_3 = new Foreign('Giovanna', 'Lori', 'giovanna.lori@gmail.com');
+
+var_dump($user_1, $user_2, $user_3);
 
 ?>
 
