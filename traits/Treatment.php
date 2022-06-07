@@ -8,7 +8,7 @@ trait Treatment {
     }
 
     public function getDiscount(){
-        return $this->super_treatment ? 30 : $this->discount;
+        return $this->super_treatment ? 20 : $this->discount;
     }
 }
 
